@@ -92,7 +92,7 @@ header .container {
 
 /*  */
 .Hero-Header-Section {
-  background: url(./assets/image/Background_pattern.svg) no-repeat;
+  background: url(../assets/image/Background_pattern.svg) no-repeat;
   object-fit: scale-down;
 }
 
