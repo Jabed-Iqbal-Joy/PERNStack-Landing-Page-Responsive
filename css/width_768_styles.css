@@ -96,16 +96,16 @@ header .container {
   object-fit: scale-down;
 }
 
-/* Hero Area */
+/* Hero Area
 
 /* Hero Area - Heading */
-.hero_content1_heading {
+/* .hero_content1_heading {
   text-align: left;
 }
 
 .hero_content1_heading-text {
   font-size: var(--font-size-xl);
-  line-height: 44px; /* 122.222% */
+  line-height: 44px;
   letter-spacing: -0.72px;
 }
 
@@ -113,9 +113,9 @@ header .container {
   font-size: var(--font-size-md);
   line-height: 28px;
   margin: 16px auto 32px auto;
-}
+} */
 /* Hero Area - Button */
-.hero_content1_actions {
+/* .hero_content1_actions {
   display: grid;
   max-width: 100%;
 }
@@ -133,16 +133,16 @@ header .container {
 }
 .hero_content1_actions-btn2 {
   order: 1;
-}
+} */
 
 /* Hero area Image */
-.hero_content2_desktop {
+/* .hero_content2_desktop {
   display: none;
 }
 .hero_content2_mobile {
   display: block;
   width: 100%;
-}
+} */
 
 /* Content */
 

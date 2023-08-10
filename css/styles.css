@@ -59,10 +59,15 @@ section {
   letter-spacing: -0.72px;
 }
 
+.section_divider {
+  border: 1px solid #eaecf0;
+  /* width: 100%; */
+}
+
 /* Hero-Header-Section */
 
 .Hero-Header-Section {
-  background: url(/assets/image/Background_pattern.svg);
+  background: url(./assets/image/Background_pattern.svg);
 }
 
 /* Header Section */
@@ -214,4 +219,10 @@ header button {
 .content2_image {
   max-width: 576px;
   width: 100%;
+}
+
+/* Pricing */
+.pricing_content_heading-text {
+  font-size: var(--font-size-lg);
+  line-height: 30px;
 }
