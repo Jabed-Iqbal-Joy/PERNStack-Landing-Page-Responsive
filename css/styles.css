@@ -21,6 +21,7 @@
   --color-secondary: #3538cd;
   --color-heading: #101828;
   --color-text: #475467;
+  --color-shadow: #eaecf0;
 
   /* layout */
   --container-width: 1280px;
@@ -37,11 +38,17 @@ body {
   background: #fff;
 }
 
-section {
+section,
+footer {
   display: flex;
   flex-direction: column;
   padding: var(--section-padding);
   gap: 64px;
+}
+
+footer {
+  padding: 64px 0px 48px 0px;
+  background-color: #0c111d;
 }
 
 .container {
@@ -58,15 +65,21 @@ section {
   line-height: 44px; /* 122.222% */
   letter-spacing: -0.72px;
 }
+.heading-supptext {
+  font-size: var(--font-size-lg);
+  line-height: 30px;
+  margin-top: 20px;
+}
 
 .section_divider {
-  border: 1px solid #eaecf0;
+  border: 1px solid var(--color-shadow);
   /* width: 100%; */
 }
 
 /* Hero-Header-Section */
 
 .Hero-Header-Section {
+  width: 100%;
   background: url(../assets/image/Background_pattern.svg);
 }
 
@@ -223,6 +236,194 @@ header button {
 
 /* Pricing */
 .pricing_content_heading-text {
+  margin-top: 20px;
   font-size: var(--font-size-lg);
   line-height: 30px;
+}
+
+.pricing_tier {
+  display: flex;
+  gap: 32px;
+}
+.pricing_tier_card {
+  max-width: 384px;
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--color-shadow);
+  background: var(--base-white, #fff);
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03),
+    0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+}
+.pricing_tier_card_header {
+  padding: 32px 32px 0 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pricing_tier_card-heading {
+  color: var(--color-secondary);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.pricing_tier_card-price {
+  color: var(--color-heading);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  line-height: 60px; /* 125% */
+  letter-spacing: -0.96px;
+}
+.pricing_tier_card-text {
+  line-height: 24px;
+}
+
+.pricing_tier_card_content {
+  padding: 32px;
+}
+
+.pricing_tier_card_content_list {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.pricing_tier_card_content_list li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.pricing_tier_card_footer {
+  padding: 32px;
+  background-color: #f9fafb;
+}
+.pricing_tier_card_footer-btn {
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+/* Metrics Section */
+
+.metrics_body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 96px;
+  align-items: center;
+}
+.metrics_body_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px 32px;
+}
+.metrics_body_content-card {
+  text-align: center;
+}
+.metrics_card-heading {
+  color: var(--color-primary);
+  font-size: var(--font-size-xxxl);
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -1.2px;
+  margin-bottom: 12px;
+}
+.metrics_card-text {
+  color: var(--color-heading);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+}
+.metrics_card-text-supp {
+  margin-top: 8px;
+  line-height: 24px;
+}
+.metrics_body_img-desktop {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f9fafb;
+}
+.contact .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 96px;
+}
+.contact_content-right {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 48px;
+}
+.contact_content {
+  display: flex;
+  gap: 16px;
+}
+.contact_content img {
+  align-self: flex-start;
+}
+.contact_content .content {
+  display: block;
+}
+.contact_content-heading {
+  color: var(--color-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.contact_content-text {
+  margin-top: 8px;
+  line-height: 24px;
+}
+
+/* Footer */
+
+.foot-start {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+footer .logo h4 {
+  color: #fff;
+}
+
+.footer-link {
+  color: #eaecf0;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.foot-end {
+  color: #d0d5dd;
+  line-height: 24px;
+  display: flex;
+  border-top: 1px solid var(--gray-600, #475467);
+  padding-top: 32px;
+}
+.foot-end p {
+  flex-grow: 1;
+}
+
+.foot-end ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  align-self: flex-end;
+  padding: 0px;
 }

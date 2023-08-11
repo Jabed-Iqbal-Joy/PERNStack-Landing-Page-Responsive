@@ -36,6 +36,12 @@
   letter-spacing: normal;
 }
 
+.heading-supptext {
+  font-size: var(--font-size-md);
+  line-height: 28px;
+  margin-top: 16px;
+}
+
 /* Navbar */
 .navbar {
   display: none;
@@ -166,8 +172,58 @@ header .container {
   width: 100%;
 }
 
-@media screen and (max-width: 500px) {
-  .Hero-Header-Section {
-    background: url(/assets/image/Background_pattern_mbl.svg);
-  }
+/* Pricing */
+
+.pricing_content_heading-text {
+  margin-top: 16px;
+  font-size: var(--font-size-md);
+  line-height: 28px;
+}
+
+.pricing_tier {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.pricing_tier_card_header {
+  padding: 24px 24px 0 24px;
+}
+
+.pricing_tier_card-price {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 44px; /* 125% */
+  letter-spacing: -0.72px;
+}
+
+.pricing_tier_card_content {
+  padding: 32px 24px 24px 24px;
+}
+
+.pricing_tier_card_content_list li {
+  line-height: 24px;
+}
+
+.pricing_tier_card_footer {
+  padding: 24px 24px 32px 24px;
+}
+
+/* Metrics */
+
+.metrics_body {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+.metrics_body_content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+.metrics_card-heading {
+  font-size: var(--font-size-xxl);
+  line-height: 60px;
+  letter-spacing: -0.96px;
 }
